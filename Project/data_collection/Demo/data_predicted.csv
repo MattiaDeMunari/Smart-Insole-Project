@@ -1,0 +1,102 @@
+Timestamp,Sensor1,Sensor2,Predicted Activity
+2025-04-04 13:43:01,8,515,Jumping
+2025-04-04 13:43:02,8,513,Jumping
+2025-04-04 13:43:03,7,589,Jumping
+2025-04-04 13:43:04,6,528,Jumping
+2025-04-04 13:43:05,11,496,Jumping
+2025-04-04 13:43:06,19,605,Jumping
+2025-04-04 13:43:07,24,684,Jumping
+2025-04-04 13:43:08,46,602,Jumping
+2025-04-04 13:43:09,64,452,Jumping
+2025-04-04 13:43:10,89,481,Jumping
+2025-04-04 13:43:11,101,54,Walking
+2025-04-04 13:43:12,36,32,Sitting
+2025-04-04 13:43:14,7,4,Standing on the other foot
+2025-04-04 13:43:15,8,4,Standing on the other foot
+2025-04-04 13:43:16,8,4,Standing on the other foot
+2025-04-04 13:43:17,8,4,Standing on the other foot
+2025-04-04 13:43:18,9,5,Standing on the other foot
+2025-04-04 13:43:19,9,8,Standing on the other foot
+2025-04-04 13:43:20,9,6,Standing on the other foot
+2025-04-04 13:43:21,7,6,Standing on the other foot
+2025-04-04 13:43:22,256,74,Sitting
+2025-04-04 13:43:23,329,96,Heel Tapping
+2025-04-04 13:43:24,298,98,Toe Tapping
+2025-04-04 13:43:25,398,76,Heel Tapping
+2025-04-04 13:43:26,490,52,Heel Tapping
+2025-04-04 13:43:28,456,47,Heel Tapping
+2025-04-04 13:43:29,301,61,Sitting
+2025-04-04 13:43:30,528,55,Heel Tapping
+2025-04-04 13:43:31,525,55,Heel Tapping
+2025-04-04 13:43:32,390,55,Heel Tapping
+2025-04-04 13:43:33,528,52,Heel Tapping
+2025-04-04 13:43:34,16,5,Standing on the other foot
+2025-04-04 13:43:35,219,63,Sitting
+2025-04-04 13:43:36,223,75,Toe Tapping
+2025-04-04 13:43:37,365,78,Heel Tapping
+2025-04-04 13:43:38,361,83,Heel Tapping
+2025-04-04 13:43:39,310,101,Heel Tapping
+2025-04-04 13:43:40,355,90,Heel Tapping
+2025-04-04 13:43:41,23,155,Toe Tapping
+2025-04-04 13:43:42,26,108,Walking
+2025-04-04 13:43:44,27,205,Toe Tapping
+2025-04-04 13:43:45,22,174,Jumping
+2025-04-04 13:43:46,29,226,Toe Tapping
+2025-04-04 13:43:47,24,187,Jumping
+2025-04-04 13:43:48,32,233,Jumping
+2025-04-04 13:43:49,26,201,Jumping
+2025-04-04 13:43:50,26,195,Jumping
+2025-04-04 13:43:51,5,5,Standing on the other foot
+2025-04-04 13:43:52,366,43,Heel Tapping
+2025-04-04 13:43:54,71,28,Standing on the other foot
+2025-04-04 13:43:55,94,34,Standing on the other foot
+2025-04-04 13:43:56,60,42,Sitting
+2025-04-04 13:43:57,60,43,Sitting
+2025-04-04 13:43:58,54,47,Sitting
+2025-04-04 13:43:59,53,48,Sitting
+2025-04-04 13:44:00,48,50,Heel Tapping
+2025-04-04 13:44:01,49,54,Standing on the other foot
+2025-04-04 13:44:02,19,27,Standing on the other foot
+2025-04-04 13:44:04,270,32176,Jumping
+2025-04-04 13:44:05,184,93,Walking
+2025-04-04 13:44:06,31,4438,Jumping
+2025-04-04 13:44:07,18,76,Walking
+2025-04-04 13:44:08,100,105,Heel Tapping
+2025-04-04 13:44:09,20,89,Walking
+2025-04-04 13:44:10,6,20,Standing on the other foot
+2025-04-04 13:44:11,12,23,Standing on the other foot
+2025-04-04 13:44:12,10,56,Walking
+2025-04-04 13:44:13,104,10535,Jumping
+2025-04-04 13:44:14,38,186,Toe Tapping
+2025-04-04 13:44:15,55,148,Walking
+2025-04-04 13:44:16,158,63,Sitting
+2025-04-04 13:44:17,24,55,Standing on the other foot
+2025-04-04 13:44:18,49,67,Heel Tapping
+2025-04-04 13:44:19,71,75,Walking
+2025-04-04 13:44:21,78,83,Heel Tapping
+2025-04-04 13:44:22,81,84,Heel Tapping
+2025-04-04 13:44:23,115,88,Walking
+2025-04-04 13:44:24,45,79,Walking
+2025-04-04 13:44:25,6,6,Standing on the other foot
+2025-04-04 13:44:26,222,74,Toe Tapping
+2025-04-04 13:44:27,6,10,Standing on the other foot
+2025-04-04 13:44:28,126,111,Walking
+2025-04-04 13:44:30,441,76,Heel Tapping
+2025-04-04 13:44:31,75,9,Standing on the other foot
+2025-04-04 13:44:32,132,103,Walking
+2025-04-04 13:44:33,38,18,Standing on the other foot
+2025-04-04 13:44:34,59,32,Standing on the other foot
+2025-04-04 13:44:35,262,81,Sitting
+2025-04-04 13:44:36,300,68,Sitting
+2025-04-04 13:44:37,57,18,Standing on the other foot
+2025-04-04 13:44:38,5,12,Standing on the other foot
+2025-04-04 13:44:39,364,67,Heel Tapping
+2025-04-04 13:44:41,289,62,Sitting
+2025-04-04 13:44:42,6,3,Standing on the other foot
+2025-04-04 13:44:43,187,75,Sitting
+2025-04-04 13:44:44,31,70,Standing on the other foot
+2025-04-04 13:44:45,93,77,Walking
+2025-04-04 13:44:46,118,74,Walking
+2025-04-04 13:44:47,55,75,Heel Tapping
+2025-04-04 13:44:48,6,4,Standing on the other foot
+2025-04-04 13:44:49,39,5149,Jumping
