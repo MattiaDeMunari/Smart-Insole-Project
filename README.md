@@ -13,3 +13,14 @@ The **Smart Insole Project** aims to develop an intelligent wearable insole capa
 
 ## 📁 Project Structure
 
+
+
+## ⚙️ Installation
+
+To set up the project locally:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/MattiaDeMunari/Smart-Insole-Project.git
+   cd Smart-Insole-Project
+
