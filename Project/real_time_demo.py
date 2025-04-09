@@ -3,13 +3,13 @@ import csv
 import datetime 
 import joblib
 import numpy as np
-import time  # Importa il modulo time
+import time  # Import the time module
 
-# Carica il modello e lo scaler
+# Load model and scaler
 model = joblib.load('knn_model_filtered.pkl')  
 scaler = joblib.load('scaler_knn_filtered.pkl')
 
-# Dizionario per la decodifica delle etichette
+# Dictionary for label mapping
 label_map = {
     0: "Normal Standing",
     1: "Heel Tapping",
@@ -22,7 +22,7 @@ label_map = {
     8: "Movement not classified"
 }
 
-# Impostazioni server
+# Server setup
 HOST = "0.0.0.0"  
 PORT = 5001  
 
@@ -36,62 +36,62 @@ print(f"Listening for connections on port {PORT}...")
 client_socket, client_address = server_socket.accept()
 print(f"Connected to {client_address}")
 
-# Apri il file CSV per salvare i dati con predizione
+# Open CSV file for writing
 csv_filename = "C:\\Users\\Mattia\\Desktop\\Smart Werables\\Project\\data_collection\\Demo\\data_predicted.csv"
 with open(csv_filename, mode="w", newline="") as file:  
     writer = csv.writer(file)
     writer.writerow(["Timestamp", "Sensor1", "Sensor2", "Predicted Activity"])  
 
-    last_time = time.time()  # Salva il tempo dell'ultima elaborazione
+    last_time = time.time()  # Save the last time data was processed
 
     try:
         while True:
             data = client_socket.recv(2048).decode("utf-8").strip()
-            current_time = time.time()  # Tempo corrente
+            current_time = time.time()  # Get the current time
 
-            # Elabora i dati solo se è passato almeno 1 secondo
-            if current_time - last_time >= 1:  # Intervallo di 1 secondo
+            # Process data every second
+            if current_time - last_time >= 1:  
                 if data:
                     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                     print(f"Received: {data}")  
 
-                    # Pulizia dei dati: rimuove spazi, a capo e caratteri non numerici
+                    # Data cleaning
                     clean_data = data.replace("\n", "").replace("\r", "").strip()
                     values = clean_data.split(",")
 
-                    # Controllo se ci sono almeno 2 valori validi
+                    # Check if there are at least 2  valid values
                     if len(values) < 2:
-                        print("⚠️ Dati incompleti ricevuti, ignorati.")
+                        print("Incomplete data received, ignored.")
                         continue
 
                     try:
                         sensor_values = np.array([[float(values[0]), float(values[1])]])  # Converti in float
                     except ValueError:
-                        print(f"⚠️ Errore nella conversione dei dati: {values}, ignorati.")
-                        continue  # Ignora i dati errati
+                        print(f"Error in data conversion: {values}, ignored.")
+                        continue  
                     
-                    # Normalizza i dati
+                    # Normalizes the data
                     sensor_values = scaler.transform(sensor_values)
                     
-                    # Predice l'attività e converte in intero
+                    # Predicts the activity and converts the result to an integer
                     prediction = model.predict(sensor_values)[0]
 
-                    # Se il modello restituisce una stringa invece di un intero, convertilo
+                    # if the prediction is a string, convert it to the corresponding integer
                     if isinstance(prediction, str):
                         prediction = list(label_map.keys())[list(label_map.values()).index(prediction)]
                     else:
                         prediction = int(prediction)
 
-                    # Ottieni la label dal dizionario
+                    # get the corresponding label from the dictionary
                     predicted_label = label_map.get(prediction, "Unknown Activity")
                     
                     print(f"Predicted Activity: {predicted_label}")  
 
-                    # Salva nel CSV
+                    # Save to CSV
                     writer.writerow([timestamp] + values[:2] + [predicted_label])  
                     file.flush()  
 
-                last_time = current_time  # Aggiorna il tempo dell'ultima elaborazione
+                last_time = current_time  # Update the last time data was processed
 
     except KeyboardInterrupt:  
         print("Server stopped.")  

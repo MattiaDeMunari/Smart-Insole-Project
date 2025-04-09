@@ -42,7 +42,7 @@ def load_data_all_subjects():
             file_path = os.path.join(base_folder, subject, file)
             if os.path.exists(file_path):
                 temp_df = pd.read_csv(file_path, sep=',')
-                temp_df["Subject"] = subject  # Aggiunge il nome del soggetto
+                temp_df["Subject"] = subject  
                 df_list.append(temp_df)
     return pd.concat(df_list, ignore_index=True) if df_list else None
 
