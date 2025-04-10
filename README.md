@@ -6,7 +6,7 @@ This project focuses on developing a smart insole that is able to recognize eigh
 
 ## 🚀 Features
 
-- **Real-Time Monitoring**: Tracks pressure across different zones of the foot (heel, midfoot, forefoot).
+- **Real-Time Monitoring**: Tracks pressure across different zones of the foot (heel and forefoot).
 - **Activity Recognition**: Uses sensor data and machine learning to classify different activities (walking,jumping, tapping, etc.).
 - **Data Collection**: Gathers data via pressure sensors and IMU for training and testing.
 - **Expandable**: Designed to integrate with additional hardware or cloud platforms for extended functionality.
