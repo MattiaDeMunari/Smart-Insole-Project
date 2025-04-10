@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-The **Smart Insole Project** aims to develop an intelligent wearable insole capable of monitoring foot pressure and motion in real-time. This system helps in classifying physical activities, analyzing gait, and potentially preventing injuries through data-driven insights.
+This project focuses on developing a smart insole that is able to recognize eight different physical activities using integrated textile-based sensors. The system is designed to detect foot movements due to varying pressure on the insole. By integrating textile-based sensors, the system collects real-time data and processes it by using machine learning algorithms to classify the different activities. The project emphasizes wearability, cost-efficiency and sustainability while maintaining high recognition accuracy. 
 
 ## 🚀 Features
 
@@ -11,7 +11,7 @@ The **Smart Insole Project** aims to develop an intelligent wearable insole capa
 - **Data Collection**: Gathers data via pressure sensors and IMU for training and testing.
 - **Expandable**: Designed to integrate with additional hardware or cloud platforms for extended functionality.
 
-## 📁 Project Structure
+
 
 
 
